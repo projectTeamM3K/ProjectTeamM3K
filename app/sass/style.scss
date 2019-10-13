@@ -1,4 +1,144 @@
-h1 {
-	color:blue;
-	font-size: 100px;
+$lightbg: #EFEBE4;
+$darkbg: #344652;
+$accent: #FFB143;
+$textcolor: #101F2A;
+$warningcolor: #FF4343;
+$fontFamily: 'Montserrat', sans-serif;
+$fontSize: 16px;
+
+body, h1,h2,h3, h4,h5,h6, p, ul,ol, button{
+	margin: 0;
+	padding: 0;	
+	font-family: $fontFamily;
+	color: $darkbg;
+	font-size: $fontSize;
+}
+li{
+	list-style:none;
+}
+button:focus{
+	outline: none;
+}
+
+a:hover , a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@mixin block-global-style{
+	width: 100%;
+	background-color: $lightbg;
+	padding-top: 5%;
+}
+@mixin big-contact-photo{
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	background: #000000;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	display: block;
+	margin-bottom: 24px;
+
+}
+
+.contact-page{
+	display: block; 
+	@include block-global-style;
+	&__main-photo{
+		@include big-contact-photo;
+		border: 2px solid #FFB143;	
+	}
+	&__contact-full-name,
+	&__contact-text-about,
+	&__phone-number,
+	&__email,
+	&__date-of-birth,
+	&__insta-acc {
+		display: block;
+	}
+	&__contact-full-name{
+		font-size: 24px;
+		padding-bottom: 16px;
+	}
+	&__contact-text-about{
+		padding-bottom: 44px;
+	}
+	&__contact-full-name,
+	&__contact-text-about{
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	&__phone-number,
+	&__email,
+	&__date-of-birth,
+	&__insta-acc {
+	height: 24px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 36px;
+	position: relative;
+	}
+
+	&__phone-number:before,
+	&__email:before,
+	&__date-of-birth:before,
+	&__insta-acc:before{
+			position: absolute;
+			top:-12px;
+			left:16px;
+			font-size: 12px;
+			color: rgba(52, 70, 82, 0.5);
+		}
+	&__phone-number:before{
+		content:'Phone'; ;
+
+	}
+	&__email:before{
+		content:'Email';
+	}
+	&__date-of-birth:before{
+		content:'Birthday'; 
+	}
+	&__insta-acc:before{
+		content:'Instagram'; 
+	}
+
+	&__insta-acc {
+		padding-bottom: 16px;
+	}
+	&__insta-last-photos{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 7.5%;
+		padding-right: 7.5%;
+		li{
+			width: 128px;
+			height: 128px;
+			margin-bottom: 16px;
+
+			img{
+				width: 100%;
+				height: 100%;
+				border-radius: 4px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact-page{
+		width: 65%;
+		padding-top: 6.25%;
+
+		&__insta-last-photos{
+			padding-left: 18%;
+			padding-right: 18%;
+		}
+	}
+	
 }
