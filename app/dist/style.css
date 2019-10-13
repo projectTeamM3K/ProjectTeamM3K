@@ -1,0 +1,189 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, button {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #344652;
+  font-size: 16px; }
+
+li {
+  list-style: none; }
+
+form, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+  border: none;
+  background-color: transparent; }
+
+button:focus {
+  outline: none; }
+
+a:hover, a {
+  color: inherit;
+  text-decoration: inherit; }
+
+.contact-page {
+  display: block;
+  width: 100%;
+  background-color: #EFEBE4;
+  padding-top: 5%; }
+  .contact-page__main-photo {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 24px;
+    border: 2px solid #FFB143; }
+  .contact-page__contact-full-name, .contact-page__contact-text-about, .contact-page__phone-number, .contact-page__email, .contact-page__date-of-birth, .contact-page__insta-acc {
+    display: block; }
+  .contact-page__contact-full-name {
+    font-size: 24px;
+    padding-bottom: 16px; }
+  .contact-page__contact-text-about {
+    padding-bottom: 44px; }
+  .contact-page__contact-full-name, .contact-page__contact-text-about {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .contact-page__phone-number, .contact-page__email, .contact-page__date-of-birth, .contact-page__insta-acc {
+    height: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 36px;
+    position: relative; }
+  .contact-page__phone-number:before, .contact-page__email:before, .contact-page__date-of-birth:before, .contact-page__insta-acc:before {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    font-size: 12px;
+    color: rgba(52, 70, 82, 0.5); }
+  .contact-page__phone-number:before {
+    content: 'Phone'; }
+  .contact-page__email:before {
+    content: 'Email'; }
+  .contact-page__date-of-birth:before {
+    content: 'Birthday'; }
+  .contact-page__insta-acc:before {
+    content: 'Instagram'; }
+  .contact-page__insta-acc {
+    padding-bottom: 16px; }
+  .contact-page__insta-last-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 7.5%;
+    padding-right: 7.5%; }
+    .contact-page__insta-last-photos li {
+      width: 128px;
+      height: 128px;
+      margin-bottom: 16px; }
+      .contact-page__insta-last-photos li img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px; }
+
+@media (min-width: 768px) {
+  .contact-page {
+    width: calc(100% - 320px);
+    padding-top: 6.25%; }
+    .contact-page__insta-last-photos {
+      padding-left: 18%;
+      padding-right: 18%; } }
+
+.contact_photo {
+  position: relative;
+  text-align: center;
+  padding: 1rem 0 1.4rem; }
+  .contact_photo .contact_photo_img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+    cursor: pointer; }
+    .contact_photo .contact_photo_img a, .contact_photo .contact_photo_img a > img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .contact_photo p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto';
+    font-size: .6rem;
+    line-height: 11px;
+    font-weight: bold; }
+
+.main_content {
+  background-color: #EFEBE4;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 0 15px; }
+
+.contact_form {
+  position: relative;
+  padding-bottom: 2rem;
+  width: 100%; }
+
+form {
+  position: relative; }
+  form div {
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center; }
+    form div input {
+      position: relative;
+      width: 100%;
+      border-bottom: 1px solid rgba(52, 70, 82, 0.5);
+      font-size: 16px;
+      line-height: 24px;
+      color: #101F2A; }
+      form div input:focus, form div input:active {
+        outline: none;
+        border-bottom: 1px solid #FFB143; }
+    form div textarea {
+      background-color: transparent;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgba(52, 70, 82, 0.5); }
+      form div textarea:focus, form div textarea:active {
+        outline: none;
+        border-bottom: 1px solid #FFB143; }
+    form div input:placeholder-shown, form div textarea:placeholder-shown {
+      padding-bottom: 1rem;
+      font-size: 12px;
+      line-height: 12px;
+      color: rgba(52, 70, 82, 0.5); }
+    form div button {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      min-width: 8.5rem;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid #101F2A;
+      border-radius: 56px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 12px; }
+      form div button:focus, form div button:hover {
+        background-color: #FFB143; }
+      form div button span {
+        padding: 0 10px;
+        color: #101F2A;
+        font-size: inherit;
+        line-height: 20px; }
+
+@media (min-width: 768px) {
+  .main_content {
+    width: calc(100% - 320px); } }
