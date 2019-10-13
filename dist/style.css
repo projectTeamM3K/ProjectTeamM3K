@@ -86,3 +86,53 @@ a:hover, a {
     .contact-page__insta-last-photos {
       padding-left: 18%;
       padding-right: 18%; } }
+
+.header {
+  position: relative;
+  background: #FFB143;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px #adaaaa;
+  z-index: 2; }
+  .header h1 {
+    font-size: 24px;
+    line-height: 24px; }
+  .header i {
+    font-size: 35px;
+    margin: 0 16px; }
+  .header a {
+    min-width: 55px; }
+
+.all-contacts {
+  width: 100%;
+  background-color: #EFEBE4;
+  padding-top: 5%;
+  min-height: 500px; }
+  .all-contacts .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .all-contacts .contact img {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      background: #000000;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      display: block;
+      margin-bottom: 24px;
+      border: 2px solid #FFB143;
+      height: 48px;
+      width: 48px;
+      margin: 0 30px; }
+    .all-contacts .contact i {
+      font-size: 27px;
+      margin: 0 16px; }
+    .all-contacts .contact div {
+      width: 100%; }
+      .all-contacts .contact div p {
+        font-size: 12px; }
