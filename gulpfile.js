@@ -13,7 +13,7 @@ gulp.task ( 'clear', done => {
 gulp.task ( 'styles', done => {
 	gulp.src ( './app/sass/style.scss' )
 		.pipe ( gulpScss ( ) )
-		.pipe ( gulp.dest ( './dist' ) )
+		.pipe ( gulp.dest ( './app/dist' ) )
 	done ( ) ;
 });
 
