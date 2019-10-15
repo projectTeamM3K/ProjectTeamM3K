@@ -4,8 +4,8 @@
 	<title></title>
 	<meta charset="utf-8">
 	<meta name = "viewport" content = "width=device-width,initial-scale=1">
-	<link rel = "stylesheet"  href = "../dist/style.css">
-	<link href = "https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel = "stylesheet"  href = "dist/style.css">
+	<link href = "https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class='contact-page'>
@@ -49,5 +49,27 @@
 			</li>
 		</ul>
 	</div>
+	<section class="main_content">
+		<div class="contact_photo">
+			<div class="contact_photo_img">
+				<a href="" title="contact photo"><img src="img/user_temp.svg" alt="contact photo"></a>
+				<p>Click for <br> Upload Photo</p>
+			</div>
+		</div>
+		<div class="contact_form">
+			<form class="add_form" action="" method="POST">
+				<div><input name="contact_name" type="text" placeholder="Name"></div>
+				<div><input name="contact_surname" type="text" placeholder="Surname"></div>
+				<div><input name="contact_phone" type="text" placeholder="Phone"></div>
+				<div><input name="contact_email" type="text" placeholder="Email"></div>
+				<div><input name="contact_bday" type="text" placeholder="Birthday"></div>
+				<div><input name="contact_insta" type="text" placeholder="Instagram"></div>
+				<div><input name="contact_facebook" type="text" placeholder="Facebook"></div>
+				<div><textarea name="contact_info" id="" cols="30" rows="10" placeholder="Information"></textarea></div>
+				<div><button><span>Save</span></button></div>
+			</form>
+		</div>
+	</section>
+
 </body>	
 </html>
