@@ -4,11 +4,116 @@
 	<title></title>
 	<meta charset="utf-8">
 	<meta name = "viewport" content = "width=device-width,initial-scale=1">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 	<link rel = "stylesheet"  href = "dist/style.css">
 	<link href = "https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="sidebar">
+		<div class="wrapper">
+			<div class="header-sidebar">
+				<div class="close"></div>
+				<h1 class="title">Contact Book</h1>
+			</div>
+			<div class="user-card">
+				<div class="user-avatar">
+					<img src="img/Bitmap.png" alt="">
+
+				</div>
+				<div class="user-name">
+					<h2 class="name">Warhol Andy</h2>
+					<p class="log-out">Log out</p>
+				</div>
+				<div class="action-menu">
+					<button class="action"><span class="action-dots"></span></button>
+				</div>
+			</div>
+			<div class="search">
+				<input type="text" placeholder="Search a contact">
+				<img class="search-img" src="img/search.svg" alt="">
+			</div>
+		</div>
+			<main>
+				<div class="categories">
+					<h3 class="categories-title">Categories</h3>
+					<ul class="categories-list">
+						<li class="categories-item active">All contacts</li>
+						<li class="categories-item">Family</li>
+						<li class="categories-item">Job</li>
+						<li class="categories-item">Fitnes</li>
+					</ul>
+				</div>
+				<div class="birthday">
+					<h3 class="birthday-title">Upcoming Birthday</h3>
+					<ul class="birthday-list">
+						<li class="birthday-item">
+							<p class="name">Александр Иванов</p>
+							<p class="date">20.09.2019</p>
+							<span class="age">30 years</span>
+						</li>
+						<li class="birthday-item">
+							<p class="name">Вячеслав Константинов</p>
+							<p class="date">23.09.2019</p>
+							<span class="age">44 years</span>
+						</li>
+					</ul>
+				</div>
+			</main>
+			<div class="wrapper">
+				<div class="footer">
+					
+					<button><div class="add"></div>Add contact</button>	
+				</div>
+			</div>
+	</div>
+	<div class="all-contacts">
+		<div class="header">
+			<a>
+				<i class="icon ion-md-menu"></i>
+			</a>
+			<h1>All contacts</h1>
+			<!-- <a>
+				<i class="icon ion-md-close"></i>
+			</a> -->
+			<a>
+				<!-- <i class="icon ion-ios-more"></i> -->
+			</a>
+		</div>
+		<div class="contact">
+			<img src="./img/Bitmap.png" alt="contact main photo">
+				<div>
+					<h2>Andy Warhol</h2>
+					<p>Some text here</p>
+				</div>
+			<a>
+				<i class="icon ion-ios-more"></i>
+			</a>    
+		</div>
+		<div class="contact">
+			<img src="./img/teammate_headline__userpic.jpg" alt="contact main photo">
+				<div>
+					<h2>Ivan Ivanov</h2>
+					<p>Some text here</p>
+				</div>
+			<a>
+				<i class="icon ion-ios-more"></i>
+			</a>    
+		</div>
+		   
+	</div>
 	<div class='contact-page'>
+		<div class="header">
+			<a>
+				<i class="icon ion-md-menu"></i>
+			</a>
+			<h1>Andy Warhol</h1>
+			<!-- <a>
+				<i class="icon ion-md-close"></i>
+			</a> -->
+			<a>
+				<!-- <i class="icon ion-ios-more"></i> -->
+			</a>
+		</div>
 		<img src="./img/Bitmap.png" class = "contact-page__main-photo" alt="contact main photo">
 		<h1 class = 'contact-page__contact-full-name'>
 			Andy Warhol
@@ -50,6 +155,18 @@
 		</ul>
 	</div>
 	<section class="main_content">
+		<div class="header">
+			<a>
+				<i class="icon ion-md-menu"></i>
+			</a>
+			<h1>Add new contact</h1>
+			<!-- <a>
+				<i class="icon ion-md-close"></i>
+			</a> -->
+			<a>
+				<!-- <i class="icon ion-ios-more"></i> -->
+			</a>
+		</div>
 		<div class="contact_photo">
 			<div class="contact_photo_img">
 				<a href="" title="contact photo"><img src="img/user_temp.svg" alt="contact photo"></a>
